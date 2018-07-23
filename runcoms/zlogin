@@ -24,3 +24,6 @@
   fi
 
 } >&2
+
+# Remap caps lock to control on login
+setxkbmap -layout us -option ctrl:nocaps
