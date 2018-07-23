@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='nvr -s'
+export VISUAL='nvr -s'
 export PAGER='less'
 
 #
