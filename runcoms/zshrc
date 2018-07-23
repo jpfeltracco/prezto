@@ -17,4 +17,12 @@ fi
 # Fix bug with fzf inside neovim terminal - https://github.com/junegunn/fzf/issues/809
 [ -n "$NVIM_LISTEN_ADDRESS" ] && export FZF_DEFAULT_OPTS='--no-height'
 
-alias nvim="nvr -s"
+if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
+    export FZF_DEFAULT_OPTS='--no-height'
+    export VISUAL="nvr -O"
+    alias nvim="$VISUAL"
+else
+    # unalias nvim
+fi
+
+alias v=$VISUAL

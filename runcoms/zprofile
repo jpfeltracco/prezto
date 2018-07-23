@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nvr -s'
-export VISUAL='nvr -s'
+export EDITOR='vi'
+export VISUAL='nvim'
 export PAGER='less'
 
 #
