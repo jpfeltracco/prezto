@@ -11,7 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Fix bug with fzf inside neovim terminal - https://github.com/junegunn/fzf/issues/809
@@ -26,3 +25,6 @@ else
 fi
 
 alias v=$VISUAL
+
+# This should get moved to some init script eventually?
+setxkbmap -layout us -option ctrl:nocaps
