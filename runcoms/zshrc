@@ -23,7 +23,7 @@ alias jj="fasd_cd -i"
 
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
     export FZF_DEFAULT_OPTS='--no-height'
-    export VISUAL="nvr -O"
+    export VISUAL="nvr -p"
     alias nvim="$VISUAL"
 else
     # unalias nvim

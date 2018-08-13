@@ -63,6 +63,14 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 # Get .profile variables
-emulate sh
-. ~/.profile
-emulate zsh
+case `uname` in
+  Darwin)
+    # commands for OS X go here
+  ;;
+  Linux)
+    emulate sh
+    . ~/.profile
+    emulate zsh
+    # commands for Linux go here
+  ;;
+esac
