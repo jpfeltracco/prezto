@@ -31,5 +31,7 @@ fi
 
 alias v=$VISUAL
 
+alias f="find . -iname "
+
 # This should get moved to some init script eventually?
-setxkbmap -layout us -option ctrl:nocaps
+# setxkbmap -layout us -option ctrl:nocaps
