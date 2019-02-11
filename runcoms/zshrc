@@ -29,9 +29,17 @@ else
     # unalias nvim
 fi
 
+backward-kill-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-kill-word
+}
+zle -N backward-kill-dir
+bindkey '^[^?' backward-kill-dir
+
 alias v=$VISUAL
 
 alias f="find . -iname "
 
-# This should get moved to some init script eventually?
-# setxkbmap -layout us -option ctrl:nocaps
+alias ssh='TERM=xterm ssh'
+
+xset r rate 200 40
